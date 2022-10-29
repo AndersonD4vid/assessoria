@@ -1,7 +1,6 @@
 # Landing page para ramo de assessorias
-Clone do site https://www.gabtoschi.com/letreco/
 
-## LIVE DEMO: assessoria-pi.vercel.app
+## LIVE DEMO: https://assessoria-pi.vercel.app
 ## Figma: https://www.figma.com/file/pgQC2CeTMuXNcZwHzZF5et/Assessoria?node-id=0%3A1
 
 ## ATENÇÃO: Em breve irei adicionar responsividade ao site, aguardem!
