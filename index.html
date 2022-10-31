@@ -44,121 +44,136 @@
       <div>
         <ul>
           <li>
-            <a href="#/entrar">Entrar</a>
+            <a href="#">Entrar</a>
           </li>
         </ul>
+
+        <button class="btn-menu-mobile" onclick="openNav()">&#9776;</button>
       </div>
+    </nav>
+
+    <nav id="nav-mobile" class="side-nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#sobre" onclick="closeNav()">Sobre</a>
+      <a href="#servicos" onclick="closeNav()">Serviços</a>
+      <a href="#contato" onclick="closeNav()">Contato</a>
+      <a href="#" onclick="closeNav()">Entrar</a>
     </nav>
   </header>
 
-  <div class="background" title="Serviços jurídicos com excelência" id="home">
-    <img src="/imagens/background.png" alt="imagem de fundo" class="background-img" />
-
-    <div class="overlay">
-      <h3>Serviços jurídicos com excelência</h3>
-      <p>
-        Buscando sempre a obtenção de
-        soluções que garantam a satisfação de nossos clientes.
-      </p>
-
-      <img src="/imagens/logo.png" alt="logo" class="logo-background" />
+  <div id="main">
+    <div class="background" title="Serviços jurídicos com excelência" id="home">
+      <img src="/imagens/background.png" alt="imagem de fundo" class="background-img" />
+  
+      <div class="overlay">
+        <h3>Serviços jurídicos com excelência</h3>
+        <p>
+          Buscando sempre a obtenção de
+          soluções que garantam a satisfação de nossos clientes.
+        </p>
+  
+        <img src="/imagens/logo.png" alt="logo" class="logo-background" />
+      </div>
+  
+      <div class="botao-contato-container" title="Entrar em contato">
+        <img src="/imagens/wave.png" class="wave" alt="imagem de fundo estilo ondas do mar" />
+        <div class="overlay-logo">
+          <div class="logo-contato">
+            <img src="/imagens/icone-chat.png" class="icone-chat" />
+          </div>
+          <span class="texto-entrar-em-contato">Contate-nos agora!</span>
+        </div>
+         
+      </div>
     </div>
-
-    <div class="botao-contato-container" title="Entrar em contato">
-      <img src="/imagens/wave.png" class="wave" alt="imagem de fundo estilo ondas do mar" />
-      <div class="overlay-logo">
-        <div class="logo-contato">
-          <img src="/imagens/icone-chat.png" class="icone-chat" />
+  
+    <main class="main-container" >
+      <section class="section" title="Áreas de Atuação" id="servicos">
+        <div class="area-titulo">
+          <h1>Áreas de Atuação</h1>
+          <div class="border-line"></div>
+        </div>
+  
+        <div class="servicos-container">
+          <div class="servico" title="Direito trabalhista">
+            <img src="/imagens/direito_trabalhista.png" alt="direito trabalhista" />
+            <span>Direito trabalhista</span>
+          </div>
+          <div class="servico" title="Direito de Família">
+            <img src="/imagens/direito_familia.png" alt="direito trabalhista" />
+            <span>Direito de Família</span>
+          </div>
+          <div class="servico" title="Direito cívil">
+            <img src="/imagens/direito_civil.png" alt="direito trabalhista" />
+            <span>Direito cívil</span>
+          </div>
+          <div class="servico" title="Direito Previdenciário">
+            <img src="/imagens/direito_previdnciario.png" alt="direito trabalhista" />
+            <span>Direito Previdenciário</span>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+  
+    <footer>
+      <div class="imagem-footer">
+        <img src="/imagens/wave-down.png" alt="imagem do footer estilo ondas do mar" />
+        
+      <div class="overlay-footer" id="sobre">
+          <h1>Sobre a nossa empresa</h1>
+          <div class="border-line"></div>
         </div>
       </div>
-       
-    </div>
-  </div>
-
-  <main class="main-container" >
-    <section class="section" title="Áreas de Atuação" id="servicos">
-      <div class="area-titulo">
-        <h1>Áreas de Atuação</h1>
-        <div class="border-line"></div>
+  
+      <div class="sobre-container">
+        <p>
+          Lorem Ipsum é simplesmente texto fictício da indústria 
+          de impressão e digitação. Lorem Ipsum tem sido o texto falso 
+          padrão da indústria desde 1500, quando uma impressora 
+          desconhecida pegou uma galera do tipo e a embaralhou para fazer 
+          um livro de espécimes. Sobreviveu não só a cinco séculos, mas 
+          também o salto para a digitação eletrônica, permanecendo essencialmente inalterado.
+        </p>
       </div>
-
-      <div class="servicos-container">
-        <div class="servico" title="Direito trabalhista">
-          <img src="/imagens/direito_trabalhista.png" alt="direito trabalhista" />
-          <span>Direito trabalhista</span>
+  
+      <div class="atendimento-container">
+        <div class="box">
+          <div class="atendimento-textos" id="contato">
+            <h2>Atendimento</h2>
+            <a href="tel:1191234-5678">
+              <i class="bi bi-telephone-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
+              (11) 91234-5678
+            </a>
+            <a href="mailto:anderson.iuse@gmail.com?">
+              <i class="bi bi-envelope-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
+              assessoria@mail.com
+            </a>
+            <span>
+              <i class="bi bi-geo-alt-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
+              Rua nome da rua, 0 - Sala 2 - 
+              Nome do bairro, São Paulo/SP.
+            </span>
+          </div>
         </div>
-        <div class="servico" title="Direito de Família">
-          <img src="/imagens/direito_familia.png" alt="direito trabalhista" />
-          <span>Direito de Família</span>
-        </div>
-        <div class="servico" title="Direito cívil">
-          <img src="/imagens/direito_civil.png" alt="direito trabalhista" />
-          <span>Direito cívil</span>
-        </div>
-        <div class="servico" title="Direito Previdenciário">
-          <img src="/imagens/direito_previdnciario.png" alt="direito trabalhista" />
-          <span>Direito Previdenciário</span>
+  
+        <div class="box" title="mapa da cidade de São Paulo">
+          <iframe width="400" height="400" id="mapa" style="border-radius: 60px;" id="gmap_canvas" src="https://maps.google.com/maps?q=S%C3%A3o%20Paulo,%20s%C3%A3o%20paulo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="imagem-footer">
-      <img src="/imagens/wave-down.png" alt="imagem do footer estilo ondas do mar" />
+  
+      <div class="mini-footer">
+        <span>AM Assessoria © Todos os direitos reservados</span>
+        <span>Criado por: <a href="https://andersondsm.vercel.app/" target="_blank">Anderson David</a></span>
+      </div>
+    </footer>
+  
+     
       
-    <div class="overlay-footer" id="sobre">
-        <h1>Sobre a nossa empresa</h1>
-        <div class="border-line"></div>
-      </div>
+     
     </div>
-
-    <div class="sobre-container">
-      <p>
-        Lorem Ipsum é simplesmente texto fictício da indústria 
-        de impressão e digitação. Lorem Ipsum tem sido o texto falso 
-        padrão da indústria desde 1500, quando uma impressora 
-        desconhecida pegou uma galera do tipo e a embaralhou para fazer 
-        um livro de espécimes. Sobreviveu não só a cinco séculos, mas 
-        também o salto para a digitação eletrônica, permanecendo essencialmente inalterado.
-      </p>
-    </div>
-
-    <div class="atendimento-container">
-      <div class="box">
-        <div class="atendimento-textos" id="contato">
-          <h2>Atendimento</h2>
-          <a href="tel:1191234-5678">
-            <i class="bi bi-telephone-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
-            (11) 91234-5678
-          </a>
-          <a href="mailto:anderson.iuse@gmail.com?">
-            <i class="bi bi-envelope-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
-            assessoria@mail.com
-          </a>
-          <span>
-            <i class="bi bi-geo-alt-fill" style="color: #fff; font-size: 16px; padding-right: 8px;"></i> 
-            Rua nome da rua, 0 - Sala 2 - 
-            Nome do bairro, São Paulo/SP.
-          </span>
-        </div>
-      </div>
-
-      <div class="box" title="mapa da cidade de São Paulo">
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" style="border-radius: 60px;" id="gmap_canvas" src="https://maps.google.com/maps?q=S%C3%A3o%20Paulo,%20s%C3%A3o%20paulo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net">embed google maps website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div></div>
-      </div>
-    </div>
-
-    <div class="mini-footer">
-      <span>AM Assessoria © Todos os direitos reservados</span>
-      <span>Criado por: <a href="https://andersondsm.vercel.app/" target="_blank">Anderson David</a></span>
-    </div>
-  </footer>
-
-   
-    
-   
   </div>
+
+  <script src="/script.js"></script>
 </body>
 </html>
