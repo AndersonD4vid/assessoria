@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 
-html, body{
+ body{
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  transition: margin-left .5s;
 }
+
 
 ul li{
   list-style: none;
@@ -219,16 +221,15 @@ a{
   align-items: center;
   flex-direction: column;
   margin: 30px;
+  width: 250px;
 }
 
 .servico img{
-  width: 250px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-.servico img:hover{
 
-}
 .servico span{
   color: #C09340;
   font-size: 25px;
@@ -297,6 +298,10 @@ a{
   padding-bottom: 80px;
 }
 
+.texto-entrar-em-contato{
+  margin-top: 10px;
+}
+
 .atendimento-container{
   background-color: #333;
   width: 100%;
@@ -338,4 +343,270 @@ a{
 
 .mini-footer a{
   color: blue;
+}
+
+.btn-menu-mobile{
+  display: none;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #C09340;
+}
+
+.side-nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+
+/* Deixando tudo responsivo */
+@media screen and (min-width: 760px) and (max-width: 900px) {
+
+  .overlay h3{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .overlay p{
+    width: 85%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .wave{
+    height: 250px;
+  }
+
+  .botao-contato-containe{
+    height: 200px;
+  }
+
+  .area-titulo{
+    width: 90%;
+  }
+  .area-titulo h1{
+    font-size: 1.7rem;
+  }
+
+  .servicos-container{
+    width: 90%;
+    
+  }
+
+  
+
+
+  .servico{
+    width: 200px;
+    margin: 60px;
+    margin-bottom: 0px;
+  }
+
+  .servico span{
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+
+  .section{
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .atendimento-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+  }
+
+
+  #mapa{
+    width: 70%;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .imagem-footer img{
+    width: 100%;
+    height: 200px;
+  }
+  
+  .imagem-footer{
+    position: relative;
+  }
+  
+  .overlay-footer{
+    height: 200px;
+  }
+  .overlay-footer .border-line{
+    width: 30%;
+  }
+  
+  .overlay-footer h1{
+    font-size: 1.7rem;
+  }
+  
+  .sobre-container{
+    padding: 10px 30px 0px 30px;
+
+  }
+  
+  .sobre-container p{
+    width: 450px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 80px;
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+	.nav ul li{
+    display: none;
+  }
+
+  .btn-menu-mobile{
+    display: block;
+  }
+
+  .overlay h3{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .overlay p{
+    width: 85%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .wave{
+    height: 200px;
+  }
+
+  .botao-contato-containe{
+    height: 200px;
+  }
+
+  .area-titulo{
+    width: 90%;
+  }
+  .area-titulo h1{
+    font-size: 1.7rem;
+  }
+
+  .servicos-container{
+    width: 90%;
+  }
+
+
+  .servico{
+    width: 120px;
+    margin: 20px;
+  }
+
+  .servico span{
+    font-size: 1rem;
+    text-align: center;
+    
+  }
+
+  .section{
+    margin-top: 80px;
+  }
+
+  .atendimento-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+  }
+
+
+  #mapa{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .imagem-footer img{
+    width: 100%;
+    height: 200px;
+  }
+  
+  .imagem-footer{
+    position: relative;
+  }
+  
+  .overlay-footer{
+    height: 200px;
+  }
+  .overlay-footer .border-line{
+    width: 30%;
+  }
+  
+  .overlay-footer h1{
+    font-size: 1.7rem;
+  }
+  
+  .sobre-container{
+    padding: 10px 30px 0px 30px;
+
+  }
+  
+  .sobre-container p{
+    width: 450px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 80px;
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  .side-nav {padding-top: 15px;}
+  .side-nav a {font-size: 18px;}
 }
